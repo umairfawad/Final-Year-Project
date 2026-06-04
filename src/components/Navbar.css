@@ -1,7 +1,24 @@
 .nav-bar {
-    display: flex;
-    padding-inline: 20px;
-    padding-block: 15px;
-    border: 1px solid gray
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 25px;
+ background: linear-gradient(90deg, #064e3b, #022c22);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+  padding: 6px 10px;
+  border-radius: 6px;
 }
 
+.nav-bar a:hover {
+  background: #ffb703;
+  color: black;
+}

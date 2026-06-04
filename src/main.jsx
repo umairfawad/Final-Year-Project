@@ -12,6 +12,8 @@ import Reservation from './Reservation.jsx'
 import Delivery from './Delivery.jsx'
 import Forget from './forget.jsx'
 import Otp from './otp.jsx'
+import FoodOrder from './components/food-order.jsx'
+import RoomBooking from "./components/room-booking.jsx";
 
 const router = createBrowserRouter([
   {
@@ -53,7 +55,16 @@ const router = createBrowserRouter([
       {
         path: "/otp",
         element: <Otp />
-      }
+      },
+       // ✅ ADD THIS ROUTE
+      {
+        path: "/food-order",
+        element: <FoodOrder />
+      },
+      {
+  path: "/room-booking",
+  element: <RoomBooking />
+}
     ]
   }
 
