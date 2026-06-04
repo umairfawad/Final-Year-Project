@@ -1,0 +1,44 @@
+.subsign-container{
+    border: 3px solid white;
+
+    width: 340px;
+    border-radius: 18px;
+    justify-content: center;
+    padding: 10px;
+
+}
+.Mainsign-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.Register-btn{
+    background-color: rgb(20, 208, 211);
+    font-size: 20px;
+    font-weight:400;
+    border-radius: 10px;
+    width:315px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    padding: 3px;
+    margin-left: 5px;
+
+}
+.FullName-div{
+    margin-top: 30px;
+    padding: 5px;
+    text-align: start;
+}
+
+.phone-div{
+    text-align: start;
+    padding: 5px;
+}
+
+
+.password-2-div{
+    text-align: start;
+    padding: 5px;
+}

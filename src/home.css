@@ -1,0 +1,35 @@
+.food_menu{
+    position: relative;
+    text-align: center;
+    
+
+}
+
+.food_menu img{
+    width: 130%;
+    height: 100%;
+}
+.text{
+    position: absolute;
+    top: 160px;
+    right: 2px;
+    padding-left: 10px;
+    
+}
+
+.menu{
+    display: flex;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+.room_menu img{
+    width: 60%;
+    height: 100%;
+}
+
+.explorer_btn{
+    position: absolute;
+    left: 90px;
+    top: 200px;
+}

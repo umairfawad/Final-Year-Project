@@ -1,0 +1,70 @@
+.sub-container{
+    border: 3px solid white;
+    width: 340px;
+    border-radius: 18px;
+    justify-content: center;
+    padding: 10px;
+
+}
+.Main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+input{
+    width: 300px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+label{
+    justify-items: start; 
+    margin-left: 7px;
+}
+
+.input-div{
+    margin-top: 40px;
+    padding: 5px;
+    text-align: start;
+    margin-left: 0px;
+}
+
+.password-div{
+    text-align: start;
+    padding: 5px;
+}
+
+
+
+button{
+    text-align: center;
+}
+
+.create_btn{
+    font-size: 14px;
+    margin-top: 3px;
+    margin-right: 80px;
+    margin-left: 6px;
+
+}
+ 
+.Login_btn{
+    background-color: rgb(20, 208, 211);
+    font-size: 20px;
+    font-weight:400;
+    border-radius: 10px;
+    width:310px;
+    margin-top: 7px;
+    padding: 3px;
+    margin-left: 7px;
+
+}
+
+.forget-btn{
+    margin-top: 7px;
+    margin-bottom: 8px;
+    margin-left: 6px;
+}
+

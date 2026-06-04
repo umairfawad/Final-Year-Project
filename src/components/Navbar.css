@@ -1,0 +1,7 @@
+.nav-bar {
+    display: flex;
+    padding-inline: 20px;
+    padding-block: 15px;
+    border: 1px solid gray
+}
+
