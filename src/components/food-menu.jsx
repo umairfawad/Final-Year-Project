@@ -7,7 +7,7 @@ export default function FoodMenu() {
         <section className='menu'>
             <div className="food_menu">
                 <img src={food4} alt="" />
-                <p className='text' style={{ color: "yellow", fontSize: "15px" }}>Enjoy your delicious meal and orders</p>
+                <p className='text' style={{ color: "white", Size: "15px" }}>Enjoy your delicious meal and Rooms</p>
                 <button className='explorer_btn' >Explorer menu</button>
             </div>
             <div className="room_menu">
