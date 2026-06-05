@@ -8,13 +8,21 @@ export default function Footer() {
 
       <div className="footer-container">
 
-        {/* Left Section */}
+        {/* Logo Section */}
         <div className="footer-box">
-          <h2>Hotel Management</h2>
+          <h2>🏨 Hotel Management</h2>
           <p>
-            Book rooms and order delicious food easily from our hotel system.
-            Best service, best comfort.
+            Book rooms and order delicious food easily.
+            We provide comfort, quality, and best service.
           </p>
+
+          {/* Social Icons */}
+          <div className="social-icons">
+            <a href="#">🔵</a>
+            <a href="#">🟣</a>
+            <a href="#">🔴</a>
+            <a href="#">🟢</a>
+          </div>
         </div>
 
         {/* Links */}
@@ -24,6 +32,15 @@ export default function Footer() {
           <Link to="/about">About</Link>
           <Link to="/reservation">Reservation</Link>
           <Link to="/food-order">Food Menu</Link>
+        </div>
+
+        {/* Services */}
+        <div className="footer-box">
+          <h3>Services</h3>
+          <p>Room Booking</p>
+          <p>Food Delivery</p>
+          <p>Event Booking</p>
+          <p>Customer Support</p>
         </div>
 
         {/* Contact */}
