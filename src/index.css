@@ -164,8 +164,6 @@ code {
   height: 180px;   /* increased height */
   object-fit: cover;
 }
-<<<<<<< HEAD
-=======
 
 /* text */
 .gallery-info {
@@ -183,7 +181,6 @@ code {
   color: #16a34a;
   font-weight: bold;
 }
->>>>>>> 2dd0171bb0478e1ccff77a3a85073609c7655ac9
 .food-order-page {
   min-height: 100vh;
   position: relative;
