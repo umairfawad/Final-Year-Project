@@ -7,7 +7,7 @@ export default function Navbar() {
         <nav className="nav-bar">
            <div className="div" style={{display: "flex", alignItems: "center", gap: "2px", textAlign    : "center"}} >
              <img style={{height: "40px", width:"40px"}} src={ReactImage} alt="Logo image" />
-            <h2 style={{display: "inline"}}>Hotel Management</h2>
+            <h2 style={{display: "inline", color:"white"}}>Hotel Management</h2>
            </div>
             
             <NavTags />
