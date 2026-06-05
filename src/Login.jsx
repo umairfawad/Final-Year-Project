@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Login.css'
-export default function Login() {
+export default function login() {
   return (
     <div>
       <div className="Main-container ">
