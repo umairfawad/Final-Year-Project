@@ -1,80 +1,110 @@
-body{
+.greet{
     background-image: url(https://images.unsplash.com/photo-1603428760740-c0089e3760f2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 550px;
-}
-.food_menu{
     position: relative;
-    text-align: center;
-    border-radius: 100px;
-    
-
+    bottom: 68px;
 }
-
-.room_menu .room_btn{
+.greet-main{
     position: relative;
-    right: 39%;
-    bottom: 20px;
-    border-radius: 10px;
-    padding: 7px;
-    font-size: 14px;
-    font-weight: 700;
+    top: 110px;
 }
-.room_menu .room_btn:hover{
-    color: rgb(6, 7, 7);
-    background: yellow;
-}
-.room_menu .text{
-    z-index: -10;
-    
+/* MAIN CONTAINER */
+.menu-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;   /* IMPORTANT */
 }
 
-.food_menu img{
-    width: 130%;
-    height: 100%;
-}
-.text{
-    position: absolute;
-    top: 150px;
-    left: 40px;
-    padding-left: 10px;
-
-    
-}
-
-.menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 150px;
-    margin-top: 100px;
-    gap: 100px;
-
+/* CARD STYLE */
+.menu-card {
+  width: 420px;        /* same for both */
+  height: 360px;       /* IMPORTANT FIX */
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
 }
 
-.room_menu img{
-    width: 60%;
-    height: 100%;
+.menu-card:hover {
+  transform: translateY(-6px);
 }
 
-.explorer_btn{
-    position: absolute;
-    left: 90px;
-    top: 200px;
-   left: 110px;
-   bottom: 12px;
-   border-radius: 10px;
-
+/* IMAGE */
+.menu-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
 }
-.footer {
+
+/* CONTENT */
+.menu-content {
+  padding: 15px;
+  text-align: center;
+  flex: 1;
+}
+
+.menu-content h3 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.menu-content p {
+  color: #64748b;
+  font-size: 14px;
+  margin: 8px 0 15px;
+}
+
+/* BUTTONS */
+.explorer_btn,
+.room_btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* FOOD BUTTON */
+.explorer_btn {
+  background: #ffb703;
+  color: black;
+}
+
+.explorer_btn:hover {
+  background: #fb8500;
+  color: white;
+}
+
+/* ROOM BUTTON */
+.room_btn {
   background: #0f172a;
   color: white;
-  margin-top: 50px;
+}
+
+.room_btn:hover {
+  background: #1e293b;
+}
+#room-card{
+    width: 400px;
+    color: aquamarine;
+}
+.footer {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  margin-top: 60px;
   padding-top: 40px;
 }
 
+/* container */
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -83,22 +113,26 @@ body{
   padding: 0 5%;
 }
 
+/* boxes */
 .footer-box {
   flex: 1;
   min-width: 220px;
 }
 
+/* titles */
 .footer-box h2,
 .footer-box h3 {
   color: #ffb703;
   margin-bottom: 10px;
 }
 
+/* text */
 .footer-box p {
   color: #cbd5e1;
   line-height: 1.6;
 }
 
+/* links */
 .footer-box a {
   display: block;
   color: #cbd5e1;
@@ -109,13 +143,35 @@ body{
 
 .footer-box a:hover {
   color: #ffb703;
+  transform: translateX(5px);
 }
 
+/* social icons */
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  background: #1e293b;
+  padding: 8px;
+  border-radius: 50%;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+.social-icons a:hover {
+  background: #ffb703;
+  transform: scale(1.2);
+}
+
+/* bottom */
 .footer-bottom {
   text-align: center;
   padding: 15px;
   margin-top: 30px;
-  border-top: 1px solid #1e293b;
+  border-top: 1px solid #334155;
   color: #94a3b8;
   font-size: 14px;
 }
