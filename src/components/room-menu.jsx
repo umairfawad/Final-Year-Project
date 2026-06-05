@@ -36,9 +36,7 @@ export default function RoomMenu() {
       {/* Header */}
       <div className="room-header">
         <h2>Room Menu</h2>
-        <Link to="/room-booking" className="see-more">
-  See More →
-</Link>
+        <span className="see-more">See More →</span>
       </div>
 
       {/* Grid */}
