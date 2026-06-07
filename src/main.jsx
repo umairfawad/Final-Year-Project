@@ -14,7 +14,14 @@ import Forget from './forget.jsx'
 import Otp from './otp.jsx'
 import FoodOrder from './components/food-order.jsx'
 import RoomBooking from "./components/room-booking.jsx";
-import OrderNow from "./components/order-now.jsx";
+import OrderOptions from "./components/OrderOptions.jsx";
+import TableOrder from "./components/table-order.jsx";
+import RoomOrder from "./components/room-order.jsx";
+import DeliveryOrder from "./components/delivery-order.jsx";
+import TableOptions from "./components/table-options.jsx";
+import EventTable from "./components/event-table.jsx";
+import SelectTable from "./components/select-table.jsx";
+import EventHalls from "./components/event-halls.jsx";
 
 const router = createBrowserRouter([
   {
@@ -67,8 +74,36 @@ const router = createBrowserRouter([
   element: <RoomBooking />
 },
 {
-  path: "/order-now",
-  element: <OrderNow />
+  path: "/order-options",
+  element: <OrderOptions />
+},
+{
+  path: "/table-order",
+  element: <TableOrder />
+},
+{
+  path: "/room-order",
+  element: <RoomOrder />
+},
+{
+  path: "/delivery-order",
+  element: <DeliveryOrder />
+},
+{
+  path: "/table-options",
+  element: <TableOptions />
+},
+{
+  path: "/event-table",
+  element: <EventTable />
+},
+{
+  path: "/select-table",
+  element: <SelectTable />
+},
+{
+  path: "/event-halls",
+  element: <EventHalls />
 }
     ]
   }

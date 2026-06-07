@@ -75,11 +75,11 @@ export default function FoodOrder() {
                 <h3>{food.name}</h3>
                 <p>{food.price}</p>
 
-                <Link to="/order-now">
-                  <button className="order-btn">
-                    Order Now
-                  </button>
-                </Link>
+                <Link to="/order-options">
+  <button className="order-btn">
+    Order Now
+  </button>
+</Link>
               </div>
             </div>
           ))}
