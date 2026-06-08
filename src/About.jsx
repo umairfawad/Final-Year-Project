@@ -1,8 +1,7 @@
-import  "./About.css"
-
+import "./About.css";
 
 export default function About() {
-      const team = [
+  const team = [
     {
       name: "Umair Fawad",
       role: "Team Leader",
@@ -24,140 +23,121 @@ export default function About() {
       img: "https://tse2.mm.bing.net/th/id/OIP.grfxst2__sNCtTETJ2j6nAHaLH?pid=Api&h=220&P=0"
     }
   ];
+
   return (
-    <div>
-          <section className="about">
-      <div className="about-container">
-        
-        <div className="about-image">
-          <img
- HEAD
-            src="https://images.unsplash.com/photo-1566073771259-6a8506099945"
+    <>
+      <section className="about">
+        <div className="about-container">
 
-            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Hotel"
-          />
+          <div className="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=870&auto=format&fit=crop"
+              alt="Hotel"
+            />
+          </div>
+
+          <div className="about-content">
+            <h1>We are Hoteliers</h1>
+            <h1>Our Story</h1>
+
+            <p>
+              Our Online Hotel Management System helps hotels manage
+              bookings, rooms, guests and payments efficiently.
+            </p>
+
+            <p>
+              We provide a modern solution that improves hotel operations
+              and customer satisfaction through automation.
+            </p>
+
+            <button>Learn More</button>
+          </div>
+
+        </div>
+      </section>
+
+      <section className="stats">
+        <div className="stat-box">
+          <h2>Our Stats</h2>
         </div>
 
-        <div className="about-content">
-          <h1>
-            We are Hoteliers - <br /> 
-          </h1>
-          <h1>Our Story</h1>
-
-          <p>
-            Our Online Hotel Management System was created to help hotels
-            manage bookings, guests, rooms, and payments efficiently through
-            one digital platform.
-          </p>
-
-          <p>
-            We focus on providing a modern and secure solution that simplifies
-            hotel operations, improves customer satisfaction, and helps hotel
-            staff save time through automation.
-          </p>
-
-          <button>Learn More</button>
-        </div>
-
-      </div>
-    </section>
-
-      <div className="stats">
-   
-
-      <div className="row">
-        <div className="">
-          <h2>Our Story</h2>
-         
-        </div>
-        <div className="box">
-          <h1>55 sec</h1  >
+        <div className="stat-box">
+          <h1>55 sec</h1>
           <p>Answering time to guest chats</p>
         </div>
 
-        <div className="box">
-          <h1>70k</h1>
+        <div className="stat-box">
+          <h1>70K</h1>
           <p>Guests per year</p>
         </div>
 
-        <div className="box">
+        <div className="stat-box">
           <h1>500+</h1>
-          <p>Units handled by 7 Cloud receptionists</p>
+          <p>Units handled by receptionists</p>
         </div>
 
+        <div className="stat-box">
+          <h1>12K+</h1>
+          <p>Chats answered yearly</p>
+        </div>
+      </section>
+
+      <section className="row">
         <div className="box">
-          <h1>12k+</h1>
-          <p>Number of chats answered in one year</p>
-        </div>
-      </div>
-    </div>
-     <div className="row">
-
-      <div className="box">
-        <h2>About Us</h2>
-        <p>
-          Our team is driven by efficiency and innovation.
-          We provide solutions that improve hotel operations
-          and guest experiences.
-        </p>
-      </div>
-
-      <div className="box">
-        <h2>Our Backgrounds</h2>
-        <p>Real Estate</p>
-        <p>Software Engineering</p>
-        <p>Customer Services</p>
-      </div>
-
-      <div className="box">
-        <h2>&nbsp;</h2>
-        <p>Hospitality Management</p>
-        <p>Tour Operations</p>
-        <p>Hotel Operations</p>
-      </div>
-
-    </div>
-            <div className="team">
-      <h1>Our Team</h1>
-
-      <div className="team-container">
-        {team.map((member, index) => (
-          <div className="card" key={index}>
-            <img src={member.img} alt={member.name} />
-            <h2>{member.name}</h2>
-            <h4>{member.role}</h4>
-          </div>
-        ))}
-      </div>
-    </div>
-      <section className="team">
-      <h1>Our Supervisor </h1>
-
-      <div className="team-container">
-
-        <div className="team-card">
-          <img
-            src="https://i.pinimg.com/originals/4d/85/b2/4d85b2ce8145f6f4ed5ad3d2b6c46287.jpg"
-            alt="Owais Qurashi"
-          />
-          <h2>Owais Qurashi</h2>
-          <h4>Supervisor</h4>
+          <h2>About Us</h2>
           <p>
-            Supervises the Online Hotel Management System project and guides
-            the team in development and project management.
+            Our team is driven by efficiency and innovation to improve
+            hotel operations and guest experiences.
           </p>
         </div>
 
-   
+        <div className="box">
+          <h2>Our Backgrounds</h2>
+          <p>Real Estate</p>
+          <p>Software Engineering</p>
+          <p>Customer Services</p>
+        </div>
 
+        <div className="box">
+          <h2>Industries</h2>
+          <p>Hospitality Management</p>
+          <p>Tour Operations</p>
+          <p>Hotel Operations</p>
+        </div>
+      </section>
 
+      <section className="team">
+        <h1>Our Team</h1>
 
-     
+        <div className="team-container">
+          {team.map((member, index) => (
+            <div className="card" key={index}>
+              <img src={member.img} alt={member.name} />
+              <h2>{member.name}</h2>
+              <h4>{member.role}</h4>
+            </div>
+          ))}
+        </div>
+      </section>
 
-      </div>
-    </section>
+      <section className="team">
+        <h1>Our Supervisor</h1>
 
-    </div>
-  )
+        <div className="team-container">
+          <div className="team-card">
+            <img
+              src="https://i.pinimg.com/originals/4d/85/b2/4d85b2ce8145f6f4ed5ad3d2b6c46287.jpg"
+              alt="Owais Qurashi"
+            />
+            <h2>Owais Qurashi</h2>
+            <h4>Supervisor</h4>
+            <p>
+              Supervises the Online Hotel Management System project
+              and guides the development team.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
