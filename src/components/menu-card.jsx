@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import menu1 from "../assets/room1.avif";
 import food4 from "../assets/4 food.jpg";
@@ -12,7 +13,10 @@ export default function FoodMenu() {
         <div className="menu-content">
           <h3>Delicious Food</h3>
           <p>Enjoy tasty meals from our hotel kitchen</p>
-          <button className="explorer_btn">Food Order</button>
+        <Link to="/food-order">
+                  <button className="explorer_btn">Food Order</button>
+
+        </Link>
         </div>
       </div>
 
@@ -22,7 +26,10 @@ export default function FoodMenu() {
         <div className="menu-content">
           <h3>Luxury Rooms</h3>
           <p>Comfortable and premium hotel rooms</p>
-          <button className="room_btn">Room Booking</button>
+        <Link to="/room-booking">
+                  <button className="room_btn">Room Booking</button>
+
+        </Link>          
         </div>
       </div>
 

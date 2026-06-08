@@ -1,44 +1,93 @@
-.subsign-container{
-    border: 3px solid white;
+/* Page Background */
+.register-page {
+  min-height: 100vh;
 
-    width: 340px;
-    border-radius: 18px;
-    justify-content: center;
-    padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-}
-.Mainsign-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
+  background-image: url("https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600");
+  background-size: cover;
+  background-position: center;
 }
 
-.Register-btn{
-    background-color: rgb(20, 208, 211);
-    font-size: 20px;
-    font-weight:400;
-    border-radius: 10px;
-    width:315px;
-    margin-top: 10px;
-    margin-bottom: 7px;
-    padding: 3px;
-    margin-left: 5px;
+/* Register Card */
+.register-card {
+  width: 360px;
 
-}
-.FullName-div{
-    margin-top: 30px;
-    padding: 5px;
-    text-align: start;
+  background: rgba(255, 255, 255, 0.96);
+
+  padding: 25px;
+  border-radius: 15px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
-.phone-div{
-    text-align: start;
-    padding: 5px;
+/* Title */
+.register-title {
+  text-align: center;
+  color: #0f172a;
+  margin-bottom: 5px;
+  font-size: 28px;
 }
 
+.register-subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
 
-.password-2-div{
-    text-align: start;
-    padding: 5px;
+/* Form */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.register-form label {
+  font-weight: 600;
+  color: #0f172a;
+  font-size: 14px;
+}
+
+/* Bigger Inputs */
+.register-form input {
+  width: 100%;
+  padding: 12px 14px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  font-size: 15px;
+  box-sizing: border-box;
+
+  outline: none;
+}
+
+.register-form input:focus {
+  border-color: #16a34a;
+}
+
+/* Button */
+.register-btn {
+  margin-top: 12px;
+
+  width: 100%;
+  padding: 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #16a34a;
+  color: white;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background: #15803d;
 }

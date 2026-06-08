@@ -1,28 +1,48 @@
-import "./Register.css"
-export default function Register() {
-    return (
-        <div>
-           <div className="Mainsign-container ">
-        <div className="subsign-container">
+import "./Register.css";
 
-           <h1 className="Signup">Sign up </h1>
-           <div className='input-container'>
-            <div className="FullName-div" >
-              <label>Full Name</label>
-              <input type="text" placeholder='Enter your Name' />
-            </div>
-            <div className="phone-div">
-              <label >Phone#</label>
-              <input type="password" placeholder='Enter your Number' />
-            </div>
-             <div className="password-2-div">
-              <label >Password</label>
-              <input type="password"  placeholder='Enter your Password' />
-            </div>
-              <button className="Register-btn" >Register</button><br />
-          </div>
-        </div>
+export default function Register() {
+  return (
+    <div className="register-page">
+      <div className="register-card">
+
+        <h1 className="register-title">Create Account</h1>
+        <p className="register-subtitle">
+          Register to access hotel services
+        </p>
+
+        <form className="register-form">
+
+          <label>Full Name</label>
+          <input
+            type="text"
+            placeholder="Enter your full name"
+          />
+
+          <label>Phone Number</label>
+          <input
+            type="tel"
+            placeholder="Enter your phone number"
+          />
+
+          <label>Password</label>
+          <input
+            type="password"
+            placeholder="Enter your password"
+          />
+
+          <label>Confirm Password</label>
+          <input
+            type="password"
+            placeholder="Confirm your password"
+          />
+
+          <button className="register-btn">
+            Register
+          </button>
+
+        </form>
+
       </div>
-        </div>
-    )
+    </div>
+  );
 }

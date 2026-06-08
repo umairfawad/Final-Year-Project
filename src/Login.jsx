@@ -1,27 +1,48 @@
-import { Link } from 'react-router-dom'
-import './Login.css'
-export default function login() {
-  return (
-    <div>
-      <div className="Main-container ">
-        <div className="sub-container">
+import { Link } from "react-router-dom";
+import "./Login.css";
 
-          <h1 className="login">Login</h1>
-          <div className='input-container'>
-            <div className="input-div" >
-              <label>UserName</label>
-              <input  type="text"  />
-            </div>
-            <div className="password-div">
-              <label >Password</label>
-              <input type="password"  />
-            </div>
-            <p className="create_btn">Dont have an account <Link to="/register">Sign up Now</Link> </p>
-              <button className="Login_btn" >Log in</button><br />
-             <p className="forget-btn">  <Link to="/forget">Forget Password</Link></p>
-          </div>
-        </div>
+export default function Login() {
+  return (
+    <div className="login-page">
+      <div className="login-card">
+
+        <h1 className="login-title">Welcome Back</h1>
+        <p className="login-subtitle">
+          Login to your Hotel Management Account
+        </p>
+
+        <form className="login-form">
+
+          <label style={{justifyContent: "start", display:"flex"}}>Username</label>
+          <input
+            type="text"
+            placeholder="Enter your username"
+          />
+
+          <label style={{justifyContent: "start", display:"flex"}}>Password</label>
+          <input
+            type="password"
+            placeholder="Enter your password"
+          />
+
+          <button className="login-btn">
+            Login
+          </button>
+
+          <p className="signup-text">
+            Don't have an account?
+            <Link to="/register"> Sign Up Now</Link>
+          </p>
+
+          <p className="forget-text">
+            <Link to="/forget">
+              Forgot Password?
+            </Link>
+          </p>
+
+        </form>
+
       </div>
     </div>
-  )
+  );
 }

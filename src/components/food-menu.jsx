@@ -47,8 +47,9 @@ export default function Gallery() {
       <div className="gallery-row">
         {foods.map((food) => (
           <div className="gallery-item" key={food.id}>
+            <Link to="/food-order">
             <img src={food.image} alt={food.name} />
-
+              </Link>
             <div className="gallery-info">
               <h4>{food.name}</h4>
               <p>{food.price}</p>

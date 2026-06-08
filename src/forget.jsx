@@ -1,21 +1,37 @@
-import "./forget.css"
-import './otp'
-import {Link} from 'react-router-dom'
+import "./forget.css";
+import { Link } from "react-router-dom";
+
 export default function Forget() {
   return (
-    <div>
-        <div className="mainforget-container" >
-            <div className="subforget-container"  >
-                <h2>Forget Password</h2>
-                <div className="input-container">
-                <label >Enter your Mobile number</label>
-                <input type="text" />
-                </div>
-                <div className="verify-Button">
-                    <Link to="/otp">Verify</Link>
-                </div>
-            </div>
+    <div className="forget-page">
+      <div className="forget-card">
+
+        <h1 className="forget-title">
+          Forgot Password
+        </h1>
+
+        <p className="forget-subtitle">
+          Enter your mobile number to receive OTP
+        </p>
+
+        <div className="forget-form">
+
+          <label>Mobile Number</label>
+
+          <input
+            type="text"
+            placeholder="Enter your mobile number"
+          />
+
+          <Link to="/otp">
+            <button className="verify-btn">
+              Verify
+            </button>
+          </Link>
+
         </div>
+
+      </div>
     </div>
-  )
+  );
 }
