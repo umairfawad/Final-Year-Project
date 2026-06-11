@@ -49,6 +49,11 @@ button{
     margin-left: 6px;
 
 }
+
+.server-error {
+    font-size: 12px;
+    color: red;
+}
  
 .Login_btn{
     background-color: rgb(20, 208, 211);

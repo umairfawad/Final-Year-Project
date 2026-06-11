@@ -22,6 +22,7 @@ import TableOptions from "./components/table-options.jsx";
 import EventTable from "./components/event-table.jsx";
 import SelectTable from "./components/select-table.jsx";
 import EventHalls from "./components/event-halls.jsx";
+import Admin from './Admin.jsx'
 
 const router = createBrowserRouter([
   {
@@ -38,7 +39,7 @@ const router = createBrowserRouter([
       },
       {
         path: "OrderHistory",
-        element: <OrderHistory/>
+        element: <OrderHistory />
       },
       {
         path: '/login',
@@ -64,47 +65,51 @@ const router = createBrowserRouter([
         path: "/otp",
         element: <Otp />
       },
-       // ✅ ADD THIS ROUTE
+      // ✅ ADD THIS ROUTE
       {
         path: "/food-order",
         element: <FoodOrder />
       },
       {
-  path: "/room-booking",
-  element: <RoomBooking />
-},
-{
-  path: "/order-options",
-  element: <OrderOptions />
-},
-{
-  path: "/table-order",
-  element: <TableOrder />
-},
-{
-  path: "/room-order",
-  element: <RoomOrder />
-},
-{
-  path: "/delivery-order",
-  element: <DeliveryOrder />
-},
-{
-  path: "/table-options",
-  element: <TableOptions />
-},
-{
-  path: "/event-table",
-  element: <EventTable />
-},
-{
-  path: "/select-table",
-  element: <SelectTable />
-},
-{
-  path: "/event-halls",
-  element: <EventHalls />
-}
+        path: "/room-booking",
+        element: <RoomBooking />
+      },
+      {
+        path: "/order-options",
+        element: <OrderOptions />
+      },
+      {
+        path: "/table-order",
+        element: <TableOrder />
+      },
+      {
+        path: "/room-order",
+        element: <RoomOrder />
+      },
+      {
+        path: "/delivery-order",
+        element: <DeliveryOrder />
+      },
+      {
+        path: "/table-options",
+        element: <TableOptions />
+      },
+      {
+        path: "/event-table",
+        element: <EventTable />
+      },
+      {
+        path: "/select-table",
+        element: <SelectTable />
+      },
+      {
+        path: "/event-halls",
+        element: <EventHalls />
+      },
+      {
+        path: "/admin",
+        element: <Admin />
+      }
     ]
   }
 
