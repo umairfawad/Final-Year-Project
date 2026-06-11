@@ -994,3 +994,86 @@ code {
   background: #ffb703;
   color: black;
 }
+/* TABLE ORDER PAGE */
+
+.table-order-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Smaller card */
+.table-order-card {
+  width: 380px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  padding: 20px;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.table-order-card h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #0f172a;
+}
+
+.table-order-card label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #0f172a;
+}
+
+/* Bigger textboxes */
+.table-order-card input,
+.table-order-card textarea {
+  width: 100%;
+  padding: 12px 14px;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  box-sizing: border-box;
+}
+
+.table-order-card textarea {
+  height: 90px;
+  resize: none;
+}
+
+.table-order-card button {
+  margin-top: 10px;
+
+  padding: 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #0f172a;
+  color: white;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.table-order-card button:hover {
+  background: #ffb703;
+  color: black;
+}
