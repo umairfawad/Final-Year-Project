@@ -37,7 +37,7 @@ export default function Revenue() {
 
       {/* TOTAL REVENUE */}
       <div className="total-revenue">
-        <h2>Total Revenue</h2>
+        <h2 style={{color:"white"}}>Total Revenue</h2>
         <h1>Rs. {total.toLocaleString()}</h1>
       </div>
 

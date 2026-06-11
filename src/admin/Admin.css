@@ -467,6 +467,7 @@ grid-template-columns:1fr;
 .total-revenue h1 {
   font-size: 40px;
   margin-top: 10px;
+  color: white;
 }
 
 .card {

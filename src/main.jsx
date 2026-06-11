@@ -35,6 +35,7 @@ import Revenue from "./admin/Revenue.jsx";
 import ManageFood from "./admin/ManageFood.jsx";
 
 
+
 const router = createBrowserRouter([
   /* USER SIDE */
   {
@@ -116,11 +117,7 @@ const router = createBrowserRouter([
       {
         path: 'event-halls',
         element: <EventHalls />
-      },
-      {
-  path: "food",
-  element: <ManageFood />
-}
+      }
     ]
   },
 
@@ -148,6 +145,10 @@ const router = createBrowserRouter([
     {
   path: "revenue",
   element: <Revenue />
+},
+      {
+  path: "food",
+  element: <ManageFood />
 }
   ]
 }

@@ -48,6 +48,14 @@ export default function AdminDashboard() {
           </div>
         </Link>
 
+        {/* ✅ FIXED MANAGE FOOD LINK */}
+        <Link to="/admin/food" className="card-link">
+          <div className="card purple">
+            <FaUtensils className="icon" />
+            <h3>Add Food</h3>
+          </div>
+        </Link>
+
       </div>
 
       <div className="table-box">
