@@ -44,8 +44,9 @@ export default function RoomMenu() {
       <div className="room-grid">
         {rooms.map((room) => (
           <div className="room-card" key={room.id}>
+            <Link to="/room-booking">
             <img src={room.img} alt={room.name} />
-
+              </Link>
             <div className="room-info">
               <h3>{room.name}</h3>
               <p>{room.price}</p>

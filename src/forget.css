@@ -1,26 +1,98 @@
-.subforget-container{
-    border: 3px solid white;
-    width: 340px;
-    border-radius: 18px;
-    padding: 10px;
-    margin-top: 100px;
-    height: 170px;
+/* Background */
+
+.forget-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600");
+  background-size: cover;
+  background-position: center;
 }
 
-.mainforget-container{
-    display: flex;
-    justify-content: center;
-    
+/* Card */
 
+.forget-card {
+  width: 360px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  padding: 25px;
+  border-radius: 15px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
-.input-container{
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 12px;
+/* Heading */
+
+.forget-title {
+  text-align: center;
+  color: #0f172a;
+  margin-bottom: 8px;
 }
 
-.verify-Button{
-    margin-left: 200px;
-    margin-top: 10px;
+.forget-subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* Form */
+
+.forget-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.forget-form label {
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+/* Input */
+
+.forget-form input {
+  width: 100%;
+  padding: 12px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  font-size: 15px;
+  box-sizing: border-box;
+
+  outline: none;
+}
+
+.forget-form input:focus {
+  border-color: #16a34a;
+}
+
+/* Button */
+
+.verify-btn {
+  width: 100%;
+  margin-top: 15px;
+
+  padding: 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #16a34a;
+  color: white;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.verify-btn:hover {
+  background: #15803d;
 }
